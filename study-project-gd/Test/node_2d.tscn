@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dvf7g2566wkhn"]
+
+[ext_resource type="Texture2D" uid="uid://b4gl8qr2nmrke" path="res://Test/icon.svg" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://gg6tnmxq3tiu" path="res://Test/Test01.gd" id="2_0e48y"]
+
+[node name="Node2D" type="Node2D" unique_id=209316163]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=802807257]
+position = Vector2(646, 233)
+texture = ExtResource("1_wtcfe")
+script = ExtResource("2_0e48y")
+
+[node name="Timer" type="Timer" parent="Sprite2D" unique_id=1886901065]
+autostart = true
+
+[node name="Button" type="Button" parent="." unique_id=561874563]
+offset_left = 578.00006
+offset_top = 526.00006
+offset_right = 650.00006
+offset_bottom = 557.00006
+scale = Vector2(2.0654957, 2.0044165)
+text = "测试按钮"
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1358990557]
+
+[connection signal="pressed" from="Button" to="Sprite2D" method="_on_button_pressed"]
