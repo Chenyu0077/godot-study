@@ -1,0 +1,44 @@
+GDRE Tools v2.5.0-beta.5
+Windows 10.0.19045, AMD Radeon RX 7800 XT, vulkan
+WARNING: Could not find embedded pck in EXE, found pck file, loading from: F:\Steam\steamapps\common\Slay the Spire 2\SlayTheSpire2.pck
+   at: GDRESettings::sort_and_validate_pck_files (modules\gdsdecomp\utility\gdre_settings.cpp:613)
+Opening file: F:\Steam\steamapps\common\Slay the Spire 2\SlayTheSpire2.pck
+Loaded 3891 imported files
+Detected Engine Version: 4.5.1
+Detected Bytecode Revision: 4.5.0-stable (ebc36a7)
+Verified 15408 files, 106 files skipped (MD5 hash entry was empty)
+setting "Copy referenced assemblies" set to false
+Extracted 15408 files, no errors detected!
+Recreating plugin configs...
+
+Exporting scenes...
+*** Exporting 1 scenes took 0.78s
+
+Saved project config.
+ERROR: Parse Error: Parse error. [Resource file res://scenes/debug/back_confirm_example.tscn:21]
+   at: ResourceLoaderCompatText::_parse_node_tag (modules\gdsdecomp\compat\resource_compat_text.cpp:333)
+Successfully ran dotnet build C:/Users/chenyu/Desktop/Slay the Spire 2/sts2.sln --property WarningLevel=0
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     3415
+Failed scripts:                         19
+Imported resources for export session:  3891
+Successfully converted:                 3891
+Lossy:                                  1216
+Rewrote metadata:                       3840
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.5.1 (Mono) to edit the project.
+
+*******************************************************************************
+

@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "RMs9dk+b6MY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\chenyu\\Desktop\\Slay the Spire 2\\sts2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chenyu\\.nuget\\packages\\godot.sourcegenerators\\4.5.1\\godot.sourcegenerators.4.5.1.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\godotsharp\\4.5.1\\godotsharp.4.5.1.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\godotsharpeditor\\4.5.1\\godotsharpeditor.4.5.1.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\jetbrains.annotations\\2023.3.0\\jetbrains.annotations.2023.3.0.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\monomod.backports\\1.1.2\\monomod.backports.1.1.2.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\monomod.ilhelpers\\1.1.0\\monomod.ilhelpers.1.1.0.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\sentry\\5.0.0\\sentry.5.0.0.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\sharpgen.runtime\\2.2.0-beta\\sharpgen.runtime.2.2.0-beta.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\sharpgen.runtime.com\\2.2.0-beta\\sharpgen.runtime.com.2.2.0-beta.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\smartformat\\3.3.0\\smartformat.3.3.0.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\system.io.hashing\\9.0.0\\system.io.hashing.9.0.0.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\vortice.directx\\3.6.2\\vortice.directx.3.6.2.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\vortice.dxgi\\3.6.2\\vortice.dxgi.3.6.2.nupkg.sha512",
+    "C:\\Users\\chenyu\\.nuget\\packages\\vortice.mathematics\\1.9.2\\vortice.mathematics.1.9.2.nupkg.sha512"
+  ],
+  "logs": []
+}

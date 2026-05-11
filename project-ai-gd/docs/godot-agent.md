@@ -212,18 +212,18 @@ var _animation_player: AnimationPlayer
 
 # 生命周期方法
 func _ready() -> void:
-    pass
+	pass
 
 func _process(delta: float) -> void:
-    pass
+	pass
 
 # 公共方法
 func take_damage(amount: int) -> void:
-    pass
+	pass
 
 # 私有方法
 func _update_animation() -> void:
-    pass
+	pass
 ```
 
 **性能优化重点**
@@ -249,16 +249,16 @@ class_name PlayerController
 ## @param amount: 伤害数值
 ## @param source: 伤害来源（可选）
 func take_damage(amount: int, source: Node = null) -> void:
-    # 检查玩家是否还活着
-    if not is_alive:
-        return
-    
-    # 扣除生命值
-    health -= amount
-    
-    # 检查是否死亡
-    if health <= 0:
-        _handle_death()
+	# 检查玩家是否还活着
+	if not is_alive:
+		return
+	
+	# 扣除生命值
+	health -= amount
+	
+	# 检查是否死亡
+	if health <= 0:
+		_handle_death()
 ```
 
 ### 第四步：Godot特有优化
@@ -270,8 +270,8 @@ signal health_changed(new_health: int)
 signal player_died()
 
 func _ready() -> void:
-    # 连接信号到具体方法
-    health_changed.connect(_on_health_changed)
+	# 连接信号到具体方法
+	health_changed.connect(_on_health_changed)
 ```
 
 **资源管理优化**
@@ -288,16 +288,16 @@ var _bullet_pool: Array[Bullet] = []
 ```gdscript
 # 避免：频繁的节点查找
 func bad_example():
-    get_node("UI/HealthBar").value = health
-    get_node("UI/ScoreLabel").text = str(score)
+	get_node("UI/HealthBar").value = health
+	get_node("UI/ScoreLabel").text = str(score)
 
 # 推荐：缓存节点引用
 @onready var _health_bar: ProgressBar = $UI/HealthBar
 @onready var _score_label: Label = $UI/ScoreLabel
 
 func good_example():
-    _health_bar.value = health
-    _score_label.text = str(score)
+	_health_bar.value = health
+	_score_label.text = str(score)
 ```
 
 ## 输出格式
@@ -342,8 +342,8 @@ signal game_state_changed(old_state: GameState, new_state: GameState)
 
 # 使用callable进行灵活的回调处理
 func connect_signals() -> void:
-    item_collected.connect(_on_item_collected)
-    game_state_changed.connect(Callable(self, "_on_game_state_changed"))
+	item_collected.connect(_on_item_collected)
+	game_state_changed.connect(Callable(self, "_on_game_state_changed"))
 ```
 
 **场景管理最佳实践**
@@ -353,36 +353,36 @@ class_name SceneManager
 
 ## 异步加载场景以避免卡顿
 func load_scene_async(scene_path: String) -> void:
-    var loader = ResourceLoader.load_threaded_request(scene_path)
-    # 显示加载界面
-    _show_loading_screen()
-    
-    # 等待加载完成
-    while ResourceLoader.load_threaded_get_status(scene_path) != ResourceLoader.THREAD_LOAD_LOADED:
-        await get_tree().process_frame
-    
-    var new_scene = ResourceLoader.load_threaded_get(scene_path)
-    get_tree().change_scene_to_packed(new_scene)
+	var loader = ResourceLoader.load_threaded_request(scene_path)
+	# 显示加载界面
+	_show_loading_screen()
+	
+	# 等待加载完成
+	while ResourceLoader.load_threaded_get_status(scene_path) != ResourceLoader.THREAD_LOAD_LOADED:
+		await get_tree().process_frame
+	
+	var new_scene = ResourceLoader.load_threaded_get(scene_path)
+	get_tree().change_scene_to_packed(new_scene)
 ```
 
 **性能监控和调试支持**
 ```gdscript
 # 开发模式下的性能监控
 func _ready() -> void:
-    if OS.is_debug_build():
-        _setup_debug_info()
+	if OS.is_debug_build():
+		_setup_debug_info()
 
 func _setup_debug_info() -> void:
-    # 添加性能监控
-    var fps_label = Label.new()
-    add_child(fps_label)
-    
-    # 每秒更新FPS显示
-    var timer = Timer.new()
-    timer.wait_time = 1.0
-    timer.timeout.connect(_update_fps_display.bind(fps_label))
-    add_child(timer)
-    timer.start()
+	# 添加性能监控
+	var fps_label = Label.new()
+	add_child(fps_label)
+	
+	# 每秒更新FPS显示
+	var timer = Timer.new()
+	timer.wait_time = 1.0
+	timer.timeout.connect(_update_fps_display.bind(fps_label))
+	add_child(timer)
+	timer.start()
 ```
 
 **持久化存储最佳实践**
@@ -397,17 +397,17 @@ const SAVE_FILE = "user://savegame.save"
 ## @param game_data: 要保存的游戏数据字典
 ## @return: 保存是否成功
 func save_game(game_data: Dictionary) -> bool:
-    var save_file = FileAccess.open(SAVE_FILE, FileAccess.WRITE)
-    if save_file == null:
-        push_error("无法创建保存文件")
-        return false
-    
-    # 将数据序列化为JSON
-    var json_string = JSON.stringify(game_data)
-    save_file.store_string(json_string)
-    save_file.close()
-    
-    return true
+	var save_file = FileAccess.open(SAVE_FILE, FileAccess.WRITE)
+	if save_file == null:
+		push_error("无法创建保存文件")
+		return false
+	
+	# 将数据序列化为JSON
+	var json_string = JSON.stringify(game_data)
+	save_file.store_string(json_string)
+	save_file.close()
+	
+	return true
 ```
 
 ## 持续学习和记忆系统

@@ -1,0 +1,5 @@
+res://scenes/vfx/events/doll_room_vfx.tscn
+res://shaders/vfx/vfx_stepped_shader_fire_flat.tres
+res://shaders/vfx/vfx_stepped_shader_fire_add.tres
+res://src/Core/Entities/Ancients/AncientDialogue.cs
+res://src/Core/Entities/Actions/GameActionState.cs
