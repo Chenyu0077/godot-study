@@ -60,18 +60,20 @@ current_tab = 0
 layout_mode = 2
 metadata/_tab_index = 0
 
-[node name="RecipeList" type="VBoxContainer" parent="Panel/VBox/ShopTabs/食谱" unique_id=1857920155]
+[node name="RecipeList" type="GridContainer" parent="Panel/VBox/ShopTabs/食谱" unique_id=1857920155]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+columns = 5
 
 [node name="食材" type="ScrollContainer" parent="Panel/VBox/ShopTabs" unique_id=1719418642]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
-[node name="IngredientList" type="VBoxContainer" parent="Panel/VBox/ShopTabs/食材" unique_id=597466104]
+[node name="IngredientList" type="GridContainer" parent="Panel/VBox/ShopTabs/食材" unique_id=597466104]
 unique_name_in_owner = true
+columns = 5
 layout_mode = 2
 size_flags_horizontal = 3
 
