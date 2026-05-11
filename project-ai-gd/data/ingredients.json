@@ -1,0 +1,491 @@
+[
+	{
+		"category": "荤菜",
+		"effects": [
+			"补肾",
+			"益气"
+		],
+		"id": "shrimp",
+		"name": "虾",
+		"price": 12.0
+	},
+	{
+		"category": "蔬菜",
+		"effects": [
+			"清热",
+			"利水"
+		],
+		"id": "spring_bamboo",
+		"name": "春笋",
+		"price": 6.0
+	},
+	{
+		"category": "补益",
+		"effects": [
+			"补肝肾",
+			"明目"
+		],
+		"id": "goji_berry",
+		"name": "枸杞",
+		"price": 5.0
+	},
+	{
+		"category": "补气",
+		"effects": [
+			"补气",
+			"固表"
+		],
+		"id": "astragalus",
+		"name": "黄芪",
+		"price": 8.0
+	},
+	{
+		"category": "补益",
+		"effects": [
+			"健脾",
+			"补气"
+		],
+		"id": "yam",
+		"name": "山药",
+		"price": 6.0
+	},
+	{
+		"category": "安神",
+		"effects": [
+			"安神",
+			"养心"
+		],
+		"id": "lotus_seed",
+		"name": "莲子",
+		"price": 7.0
+	},
+	{
+		"category": "安神",
+		"effects": [
+			"润肺",
+			"安神"
+		],
+		"id": "lily_bulb",
+		"name": "百合",
+		"price": 8.0
+	},
+	{
+		"category": "清热",
+		"effects": [
+			"清热",
+			"明目"
+		],
+		"id": "chrysanthemum",
+		"name": "菊花",
+		"price": 4.0
+	},
+	{
+		"category": "补益",
+		"effects": [
+			"补气",
+			"养血"
+		],
+		"id": "red_date",
+		"name": "红枣",
+		"price": 5.0
+	},
+	{
+		"category": "祛湿",
+		"effects": [
+			"祛湿",
+			"健脾"
+		],
+		"id": "coix_seed",
+		"name": "薏米",
+		"price": 4.0
+	},
+	{
+		"category": "理气",
+		"effects": [
+			"理气",
+			"化痰"
+		],
+		"id": "tangerine_peel",
+		"name": "陈皮",
+		"price": 3.0
+	},
+	{
+		"category": "祛湿",
+		"effects": [
+			"祛湿",
+			"安神"
+		],
+		"id": "poria",
+		"name": "茯苓",
+		"price": 6.0
+	},
+	{
+		"category": "主食",
+		"effects": [
+			"健脾"
+		],
+		"id": "rice",
+		"name": "大米",
+		"price": 2.0
+	},
+	{
+		"category": "祛湿",
+		"effects": [
+			"祛湿",
+			"消肿"
+		],
+		"id": "red_bean",
+		"name": "红豆",
+		"price": 3.0
+	},
+	{
+		"category": "荤菜",
+		"effects": [
+			"滋阴",
+			"补钙"
+		],
+		"id": "pork_ribs",
+		"name": "排骨",
+		"price": 15.0
+	},
+	{
+		"category": "清热",
+		"effects": [
+			"清热",
+			"解毒"
+		],
+		"id": "mung_bean",
+		"name": "绿豆",
+		"price": 3.0
+	},
+	{
+		"category": "补益",
+		"effects": [
+			"息风",
+			"止眩"
+		],
+		"id": "gastrodia",
+		"name": "天麻",
+		"price": 20.0
+	},
+	{
+		"category": "荤菜",
+		"effects": [
+			"补气",
+			"滋阴"
+		],
+		"id": "chicken",
+		"name": "鸡肉",
+		"price": 18.0
+	},
+	{
+		"category": "安神",
+		"effects": [
+			"安神",
+			"敛汗"
+		],
+		"id": "sour_jujube",
+		"name": "酸枣仁",
+		"price": 10.0
+	},
+	{
+		"category": "补血",
+		"effects": [
+			"补血",
+			"活血"
+		],
+		"id": "angelica",
+		"name": "当归",
+		"price": 12.0
+	},
+	{
+		"category": "温中",
+		"effects": [
+			"温中",
+			"散寒"
+		],
+		"id": "ginger",
+		"name": "生姜",
+		"price": 3.0
+	},
+	{
+		"category": "荤菜",
+		"effects": [
+			"温补",
+			"散寒"
+		],
+		"id": "lamb",
+		"name": "羊肉",
+		"price": 22.0
+	},
+	{
+		"category": "润肺",
+		"effects": [
+			"润肺",
+			"止咳"
+		],
+		"id": "snow_pear",
+		"name": "雪梨",
+		"price": 5.0
+	},
+	{
+		"category": "润肺",
+		"effects": [
+			"润肺",
+			"养颜"
+		],
+		"id": "tremella",
+		"name": "银耳",
+		"price": 8.0
+	},
+	{
+		"category": "清热",
+		"effects": [
+			"清热",
+			"利水"
+		],
+		"id": "winter_melon",
+		"name": "冬瓜",
+		"price": 4.0
+	},
+	{
+		"category": "清热",
+		"effects": [
+			"清热",
+			"明目"
+		],
+		"id": "bitter_gourd",
+		"name": "苦瓜",
+		"price": 4.0
+	},
+	{
+		"category": "蔬菜",
+		"effects": [
+			"养血",
+			"止血"
+		],
+		"id": "lotus_root",
+		"name": "莲藕",
+		"price": 6.0
+	},
+	{
+		"category": "补益",
+		"effects": [
+			"健脾",
+			"补肾"
+		],
+		"id": "chestnut",
+		"name": "板栗",
+		"price": 8.0
+	},
+	{
+		"category": "补血",
+		"effects": [
+			"补血",
+			"安神"
+		],
+		"id": "longan",
+		"name": "桂圆",
+		"price": 10.0
+	},
+	{
+		"category": "蔬菜",
+		"effects": [
+			"健脾",
+			"补气"
+		],
+		"id": "pumpkin",
+		"name": "南瓜",
+		"price": 4.0
+	},
+	{
+		"category": "主食",
+		"effects": [
+			"补中",
+			"益气"
+		],
+		"id": "glutinous_rice",
+		"name": "糯米",
+		"price": 3.0
+	},
+	{
+		"category": "理气",
+		"effects": [
+			"理气",
+			"温中"
+		],
+		"id": "osmanthus",
+		"name": "桂花",
+		"price": 6.0
+	},
+	{
+		"category": "消食",
+		"effects": [
+			"消食",
+			"化积"
+		],
+		"id": "hawthorn",
+		"name": "山楂",
+		"price": 4.0
+	},
+	{
+		"category": "收涩",
+		"effects": [
+			"生津",
+			"止渴"
+		],
+		"id": "dark_plum",
+		"name": "乌梅",
+		"price": 5.0
+	},
+	{
+		"category": "清热",
+		"effects": [
+			"清热",
+			"疏风"
+		],
+		"id": "mint",
+		"name": "薄荷",
+		"price": 3.0
+	},
+	{
+		"category": "清热",
+		"effects": [
+			"清热",
+			"解毒"
+		],
+		"id": "honeysuckle",
+		"name": "金银花",
+		"price": 7.0
+	},
+	{
+		"category": "补益",
+		"effects": [
+			"润肺",
+			"补血"
+		],
+		"id": "peanut",
+		"name": "花生",
+		"price": 4.0
+	},
+	{
+		"category": "荤菜",
+		"effects": [
+			"补血",
+			"通乳"
+		],
+		"id": "pig_trotter",
+		"name": "猪蹄",
+		"price": 16.0
+	},
+	{
+		"category": "荤菜",
+		"effects": [
+			"滋阴",
+			"养胃"
+		],
+		"id": "duck",
+		"name": "鸭肉",
+		"price": 20.0
+	},
+	{
+		"category": "蔬菜",
+		"effects": [
+			"消食",
+			"化痰"
+		],
+		"id": "radish",
+		"name": "萝卜",
+		"price": 3.0
+	},
+	{
+		"category": "蔬菜",
+		"effects": [
+			"软坚",
+			"散结"
+		],
+		"id": "seaweed",
+		"name": "海带",
+		"price": 4.0
+	},
+	{
+		"category": "补血",
+		"effects": [
+			"补血",
+			"润燥"
+		],
+		"id": "ejiao",
+		"name": "阿胶",
+		"price": 30.0
+	},
+	{
+		"category": "补气",
+		"effects": [
+			"补气",
+			"健脾"
+		],
+		"id": "codonopsis",
+		"name": "党参",
+		"price": 10.0
+	},
+	{
+		"category": "荤菜",
+		"effects": [
+			"补血",
+			"滋阴"
+		],
+		"id": "black_chicken",
+		"name": "乌鸡",
+		"price": 25.0
+	},
+	{
+		"category": "温中",
+		"effects": [
+			"温中",
+			"散寒"
+		],
+		"id": "pepper",
+		"name": "胡椒",
+		"price": 5.0
+	},
+	{
+		"category": "荤菜",
+		"effects": [
+			"健脾",
+			"养胃"
+		],
+		"id": "pig_stomach",
+		"name": "猪肚",
+		"price": 18.0
+	},
+	{
+		"category": "解表",
+		"effects": [
+			"散寒",
+			"理气"
+		],
+		"id": "perilla",
+		"name": "紫苏",
+		"price": 4.0
+	},
+	{
+		"category": "养阴",
+		"effects": [
+			"养阴",
+			"润肺"
+		],
+		"id": "sand_ginseng",
+		"name": "沙参",
+		"price": 12.0
+	},
+	{
+		"category": "养阴",
+		"effects": [
+			"养阴",
+			"润燥"
+		],
+		"id": "polygonatum",
+		"name": "玉竹",
+		"price": 10.0
+	}
+]

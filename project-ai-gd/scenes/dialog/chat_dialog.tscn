@@ -1,0 +1,142 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/chat_dialog_ui.gd" id="1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0.92, 0.84, 0.68, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.45, 0.3, 0.15, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+content_margin_left = 12.0
+content_margin_top = 8.0
+content_margin_right = 12.0
+content_margin_bottom = 8.0
+
+[node name="ChatDialogUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="BgDim" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.4)
+
+[node name="DialogPanel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -260.0
+offset_right = 400.0
+offset_bottom = 260.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="VBox" type="VBoxContainer" parent="DialogPanel"]
+layout_mode = 2
+
+[node name="TopBar" type="HBoxContainer" parent="DialogPanel/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 36)
+
+[node name="TimerLabel" type="Label" parent="DialogPanel/VBox/TopBar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "倒计时 00:45"
+
+[node name="Spacer" type="Control" parent="DialogPanel/VBox/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BtnClose" type="Button" parent="DialogPanel/VBox/TopBar"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(36, 36)
+text = "X"
+
+[node name="HSep1" type="HSeparator" parent="DialogPanel/VBox"]
+layout_mode = 2
+
+[node name="ContentHBox" type="HBoxContainer" parent="DialogPanel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PortraitPanel" type="VBoxContainer" parent="DialogPanel/VBox/ContentHBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(130, 0)
+
+[node name="NpcPortrait" type="Label" parent="DialogPanel/VBox/ContentHBox/PortraitPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(80, 80)
+horizontal_alignment = 1
+vertical_alignment = 1
+text = "🧑"
+
+[node name="NpcNameLabel" type="Label" parent="DialogPanel/VBox/ContentHBox/PortraitPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+horizontal_alignment = 1
+text = "客人"
+
+[node name="PortraitSpacer" type="Control" parent="DialogPanel/VBox/ContentHBox/PortraitPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VSep" type="VSeparator" parent="DialogPanel/VBox/ContentHBox"]
+layout_mode = 2
+
+[node name="ChatArea" type="VBoxContainer" parent="DialogPanel/VBox/ContentHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ChatScroll" type="ScrollContainer" parent="DialogPanel/VBox/ContentHBox/ChatArea"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ChatMessages" type="VBoxContainer" parent="DialogPanel/VBox/ContentHBox/ChatArea/ChatScroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OptionsSep" type="HSeparator" parent="DialogPanel/VBox/ContentHBox/ChatArea"]
+layout_mode = 2
+
+[node name="OptionsArea" type="VBoxContainer" parent="DialogPanel/VBox/ContentHBox/ChatArea"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(0, 40)
+
+[node name="HSep2" type="HSeparator" parent="DialogPanel/VBox"]
+layout_mode = 2
+
+[node name="BottomBar" type="HBoxContainer" parent="DialogPanel/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 44)
+
+[node name="BottomSpacer" type="Control" parent="DialogPanel/VBox/BottomBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BtnMake" type="Button" parent="DialogPanel/VBox/BottomBar"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+custom_minimum_size = Vector2(120, 40)
+text = "制作"

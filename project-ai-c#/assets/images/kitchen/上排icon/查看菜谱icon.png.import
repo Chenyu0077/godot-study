@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfxmodmixk5j2"
-path="res://.godot/imported/微信图片_20260507211225.jpg-bfddf7025e104561ee038de0d5b6a92d.ctex"
+uid="uid://omrup6fiyfjb"
+path="res://.godot/imported/查看菜谱icon.png-5e5dc395502828d0c9de68a576433ed8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/微信图片_20260507211225.jpg"
-dest_files=["res://.godot/imported/微信图片_20260507211225.jpg-bfddf7025e104561ee038de0d5b6a92d.ctex"]
+source_file="res://assets/images/kitchen/上排icon/查看菜谱icon.png"
+dest_files=["res://.godot/imported/查看菜谱icon.png-5e5dc395502828d0c9de68a576433ed8.ctex"]
 
 [params]
 

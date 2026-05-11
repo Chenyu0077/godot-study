@@ -1,0 +1,80 @@
+[
+	{
+		"description": "客人捉着头，眉头紧皁",
+		"id": "headache",
+		"name": "头痛头晕",
+		"recommended_recipes": [
+			"chrysanthemum_tea",
+			"poria_yam_chicken"
+		]
+	},
+	{
+		"description": "客人黑眼圈很重，精神萎靡",
+		"id": "insomnia",
+		"name": "失眠多梦",
+		"recommended_recipes": [
+			"tremella_lotus_soup",
+			"longan_lotus_soup",
+			"lily_yam_porridge"
+		]
+	},
+	{
+		"description": "客人有气无力，声音微弱",
+		"id": "fatigue",
+		"name": "乏力气虚",
+		"recommended_recipes": [
+			"astragalus_yam_porridge",
+			"codonopsis_chicken_soup",
+			"spring_bamboo_chicken"
+		]
+	},
+	{
+		"description": "客人说身体沉重，食欲不振",
+		"id": "dampness",
+		"name": "湿气重",
+		"recommended_recipes": [
+			"yam_coix_ribs_soup",
+			"tangerine_coix_tea",
+			"honeysuckle_poria_tea"
+		]
+	},
+	{
+		"description": "客人捐着肚子，说胃胀",
+		"id": "indigestion",
+		"name": "消化不良",
+		"recommended_recipes": [
+			"hawthorn_plum_jelly",
+			"radish_cake"
+		]
+	},
+	{
+		"description": "客人说嗓子痛，嘴角起泡",
+		"id": "heatiness",
+		"name": "上火燥热",
+		"recommended_recipes": [
+			"mint_mung_bean_soup",
+			"bitter_gourd_ribs",
+			"winter_melon_soup"
+		]
+	},
+	{
+		"description": "客人干咳不止，嘴唇干裂",
+		"id": "autumn_dryness",
+		"name": "秋燥咳嗽",
+		"recommended_recipes": [
+			"snow_pear_tremella_soup",
+			"lily_yam_porridge",
+			"sand_ginseng_duck"
+		]
+	},
+	{
+		"description": "客人身体发冷，手脚冰凉",
+		"id": "cold_deficiency",
+		"name": "畏寒体虚",
+		"recommended_recipes": [
+			"angelica_ginger_lamb",
+			"ginger_milk",
+			"pepper_pig_stomach"
+		]
+	}
+]

@@ -1,0 +1,942 @@
+[
+	{
+		"cooking_method": "炖",
+		"effects": [
+			"养肝明目",
+			"补气养血",
+			"健脾益胃"
+		],
+		"id": "spring_bamboo_chicken",
+		"ingredients": [
+			"spring_bamboo",
+			"goji_berry",
+			"chicken"
+		],
+		"name": "春笋枸杞炖鸡",
+		"season": "春",
+		"solar_term": "立春",
+		"steps": [
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "炒鸡块",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 1.5,
+				"perfect_zone_size": 0.25,
+				"step_name": "加春笋",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "慢炖",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "default"
+	},
+	{
+		"cooking_method": "煮",
+		"effects": [
+			"补气健脾",
+			"固表止汗",
+			"增强体力"
+		],
+		"id": "astragalus_yam_porridge",
+		"ingredients": [
+			"astragalus",
+			"yam",
+			"rice"
+		],
+		"name": "黄芪山药粥",
+		"season": "春",
+		"solar_term": "立春",
+		"steps": [
+			{
+				"needle_speed": 1.5,
+				"perfect_zone_size": 0.25,
+				"step_name": "下料",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "煮粥",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "default"
+	},
+	{
+		"cooking_method": "炖",
+		"effects": [
+			"健脾祛湿",
+			"利水消肿",
+			"调养脾胃"
+		],
+		"id": "yam_coix_ribs_soup",
+		"ingredients": [
+			"yam",
+			"coix_seed",
+			"pork_ribs"
+		],
+		"name": "山药薏米排骨汤",
+		"season": "春",
+		"solar_term": "雨水",
+		"steps": [
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "粶排骨",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "下山药",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.2,
+				"perfect_zone_size": 0.18,
+				"step_name": "慢炖",
+				"time_limit": 4.0
+			}
+		],
+		"unlock_condition": "default"
+	},
+	{
+		"cooking_method": "煮",
+		"effects": [
+			"理气健脾",
+			"祛湿化痰",
+			"和胃助消化"
+		],
+		"id": "tangerine_coix_tea",
+		"ingredients": [
+			"tangerine_peel",
+			"coix_seed"
+		],
+		"name": "陈皮薏米奶茶",
+		"season": "春",
+		"solar_term": "雨水",
+		"steps": [
+			{
+				"needle_speed": 1.5,
+				"perfect_zone_size": 0.25,
+				"step_name": "煮料",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "调奶",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "default"
+	},
+	{
+		"cooking_method": "炖",
+		"effects": [
+			"温中补血",
+			"散寒止痛",
+			"暖身驱寒"
+		],
+		"id": "angelica_ginger_lamb",
+		"ingredients": [
+			"angelica",
+			"ginger",
+			"lamb"
+		],
+		"name": "当归生姜羊肉汤",
+		"season": "春",
+		"solar_term": "惊蛰",
+		"steps": [
+			{
+				"needle_speed": 2.2,
+				"perfect_zone_size": 0.18,
+				"step_name": "炒羊肉",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "加当归",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.5,
+				"perfect_zone_size": 0.15,
+				"step_name": "慢炖",
+				"time_limit": 4.0
+			}
+		],
+		"unlock_condition": "rating_20"
+	},
+	{
+		"cooking_method": "炒",
+		"effects": [
+			"健脾祛湿",
+			"益气补虚",
+			"增强体力"
+		],
+		"id": "poria_yam_chicken",
+		"ingredients": [
+			"poria",
+			"yam",
+			"chicken"
+		],
+		"name": "茯苓山药炒鸡丁",
+		"season": "春",
+		"solar_term": "清明",
+		"steps": [
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "炒鸡丁",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "加山药",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "rating_20"
+	},
+	{
+		"cooking_method": "炖",
+		"effects": [
+			"补气养血",
+			"健脾益肺",
+			"增强免疫力"
+		],
+		"id": "codonopsis_chicken_soup",
+		"ingredients": [
+			"codonopsis",
+			"astragalus",
+			"black_chicken"
+		],
+		"name": "党参黄芪乌鸡汤",
+		"season": "春",
+		"solar_term": "谷雨",
+		"steps": [
+			{
+				"needle_speed": 2.2,
+				"perfect_zone_size": 0.18,
+				"step_name": "粶乌鸡",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "加药材",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.5,
+				"perfect_zone_size": 0.15,
+				"step_name": "慢炖",
+				"time_limit": 4.0
+			}
+		],
+		"unlock_condition": "rating_50"
+	},
+	{
+		"cooking_method": "煮",
+		"effects": [
+			"清热利水",
+			"消肿解暑",
+			"补充营养"
+		],
+		"id": "winter_melon_soup",
+		"ingredients": [
+			"winter_melon",
+			"pork_ribs"
+		],
+		"name": "冬瓜皮蛋瘦肉汤",
+		"season": "夏",
+		"solar_term": "立夏",
+		"steps": [
+			{
+				"needle_speed": 1.5,
+				"perfect_zone_size": 0.25,
+				"step_name": "下冬瓜",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "煮汤",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "default"
+	},
+	{
+		"cooking_method": "煮",
+		"effects": [
+			"消食化积",
+			"生津止渴",
+			"解暑开胃"
+		],
+		"id": "hawthorn_plum_jelly",
+		"ingredients": [
+			"hawthorn",
+			"dark_plum"
+		],
+		"name": "山楂乌梅冻",
+		"season": "夏",
+		"solar_term": "立夏",
+		"steps": [
+			{
+				"needle_speed": 1.5,
+				"perfect_zone_size": 0.25,
+				"step_name": "熄汁",
+				"time_limit": 6.0
+			},
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "出锅",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "default"
+	},
+	{
+		"cooking_method": "炖",
+		"effects": [
+			"清热解暑",
+			"明目解毒",
+			"降糖降脂"
+		],
+		"id": "bitter_gourd_ribs",
+		"ingredients": [
+			"bitter_gourd",
+			"pork_ribs"
+		],
+		"name": "苦瓜排骨汤",
+		"season": "夏",
+		"solar_term": "小满",
+		"steps": [
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "粶排骨",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "加苦瓜",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "default"
+	},
+	{
+		"cooking_method": "煮",
+		"effects": [
+			"清热解暑",
+			"提神醒脑",
+			"清凉散热"
+		],
+		"id": "mint_mung_bean_soup",
+		"ingredients": [
+			"mint",
+			"mung_bean"
+		],
+		"name": "薄荷绿豆汤",
+		"season": "夏",
+		"solar_term": "立夏",
+		"steps": [
+			{
+				"needle_speed": 1.5,
+				"perfect_zone_size": 0.25,
+				"step_name": "煮绿豆",
+				"time_limit": 6.0
+			},
+			{
+				"needle_speed": 1.3,
+				"perfect_zone_size": 0.28,
+				"step_name": "加薄荷",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "default"
+	},
+	{
+		"cooking_method": "炖",
+		"effects": [
+			"滋阴润肺",
+			"养心安神",
+			"美容养颜"
+		],
+		"id": "tremella_lotus_soup",
+		"ingredients": [
+			"tremella",
+			"lotus_seed"
+		],
+		"name": "银耳莲子羹",
+		"season": "夏",
+		"solar_term": "小暑",
+		"steps": [
+			{
+				"needle_speed": 1.5,
+				"perfect_zone_size": 0.25,
+				"step_name": "泡银耳",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "慢炖",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "rating_20"
+	},
+	{
+		"cooking_method": "炖",
+		"effects": [
+			"清热利水",
+			"软坚散结",
+			"补充营养"
+		],
+		"id": "seaweed_ribs_soup",
+		"ingredients": [
+			"winter_melon",
+			"seaweed",
+			"pork_ribs"
+		],
+		"name": "冬瓜海带排骨汤",
+		"season": "夏",
+		"solar_term": "大暑",
+		"steps": [
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "粶排骨",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "加海带",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.2,
+				"perfect_zone_size": 0.18,
+				"step_name": "煮汤",
+				"time_limit": 4.0
+			}
+		],
+		"unlock_condition": "rating_20"
+	},
+	{
+		"cooking_method": "泡",
+		"effects": [
+			"清热解毒",
+			"健脾祛湿",
+			"降火消暑"
+		],
+		"id": "honeysuckle_poria_tea",
+		"ingredients": [
+			"honeysuckle",
+			"poria"
+		],
+		"name": "金银花茯苓茶",
+		"season": "夏",
+		"solar_term": "大暑",
+		"steps": [
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "泡制",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "出杯",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "rating_50"
+	},
+	{
+		"cooking_method": "蒸",
+		"effects": [
+			"清心安神",
+			"润肺止咳",
+			"健脾养胃"
+		],
+		"id": "pumpkin_lily_steam",
+		"ingredients": [
+			"lotus_seed",
+			"lily_bulb",
+			"pumpkin"
+		],
+		"name": "莲子百合蒸南瓜",
+		"season": "夏",
+		"solar_term": "大暑",
+		"steps": [
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "摆盘",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.2,
+				"perfect_zone_size": 0.18,
+				"step_name": "蒸制",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "rating_50"
+	},
+	{
+		"cooking_method": "煮",
+		"effects": [
+			"健脾养胃",
+			"润肺安神",
+			"调理肠胃"
+		],
+		"id": "lily_yam_porridge",
+		"ingredients": [
+			"lily_bulb",
+			"yam",
+			"rice"
+		],
+		"name": "百合山药小米粥",
+		"season": "秋",
+		"solar_term": "立秋",
+		"steps": [
+			{
+				"needle_speed": 1.5,
+				"perfect_zone_size": 0.25,
+				"step_name": "下料",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "煮粥",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "default"
+	},
+	{
+		"cooking_method": "炖",
+		"effects": [
+			"润肺止咳",
+			"生津润燥",
+			"清热化痰"
+		],
+		"id": "snow_pear_tremella_soup",
+		"ingredients": [
+			"snow_pear",
+			"tremella",
+			"chicken"
+		],
+		"name": "雪梨雪耳汤",
+		"season": "秋",
+		"solar_term": "立秋",
+		"steps": [
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "下料",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "慢炖",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "default"
+	},
+	{
+		"cooking_method": "焖",
+		"effects": [
+			"健脾养胃",
+			"补肾强筋",
+			"益气养血"
+		],
+		"id": "chestnut_chicken",
+		"ingredients": [
+			"chestnut",
+			"chicken"
+		],
+		"name": "板栗烧鸡",
+		"season": "秋",
+		"solar_term": "处暑",
+		"steps": [
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "炒鸡块",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "加板栗",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.2,
+				"perfect_zone_size": 0.18,
+				"step_name": "焖煮",
+				"time_limit": 4.0
+			}
+		],
+		"unlock_condition": "default"
+	},
+	{
+		"cooking_method": "炖",
+		"effects": [
+			"补血养颜",
+			"通乳健脾",
+			"滋润肌肤"
+		],
+		"id": "peanut_trotter_soup",
+		"ingredients": [
+			"peanut",
+			"pig_trotter"
+		],
+		"name": "花生猪蹄汤",
+		"season": "秋",
+		"solar_term": "处暑",
+		"steps": [
+			{
+				"needle_speed": 2.2,
+				"perfect_zone_size": 0.18,
+				"step_name": "粶猪蹄",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "加花生",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.5,
+				"perfect_zone_size": 0.15,
+				"step_name": "慢炖",
+				"time_limit": 4.0
+			}
+		],
+		"unlock_condition": "rating_20"
+	},
+	{
+		"cooking_method": "炖",
+		"effects": [
+			"健脾开胃",
+			"养血止血",
+			"清热润燥"
+		],
+		"id": "lotus_root_ribs",
+		"ingredients": [
+			"lotus_root",
+			"pork_ribs"
+		],
+		"name": "莲藕排骨汤",
+		"season": "秋",
+		"solar_term": "秋分",
+		"steps": [
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "粶排骨",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "加莲藕",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "rating_20"
+	},
+	{
+		"cooking_method": "煮",
+		"effects": [
+			"补益心脾",
+			"养血安神",
+			"润肺止咳"
+		],
+		"id": "longan_lotus_soup",
+		"ingredients": [
+			"longan",
+			"lotus_seed"
+		],
+		"name": "桂圆莲子羹",
+		"season": "秋",
+		"solar_term": "秋分",
+		"steps": [
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "下料",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "煮羹",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "rating_20"
+	},
+	{
+		"cooking_method": "炖",
+		"effects": [
+			"滋阴润肺",
+			"养胃生津",
+			"清热降火"
+		],
+		"id": "sand_ginseng_duck",
+		"ingredients": [
+			"sand_ginseng",
+			"polygonatum",
+			"duck"
+		],
+		"name": "沙参玉竹老鸭汤",
+		"season": "秋",
+		"solar_term": "寒露",
+		"steps": [
+			{
+				"needle_speed": 2.2,
+				"perfect_zone_size": 0.18,
+				"step_name": "粶鸭",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "加药材",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.5,
+				"perfect_zone_size": 0.15,
+				"step_name": "慢炖",
+				"time_limit": 4.0
+			}
+		],
+		"unlock_condition": "rating_50"
+	},
+	{
+		"cooking_method": "煮",
+		"effects": [
+			"温中散寒",
+			"和胃止呕",
+			"暖身驱寒"
+		],
+		"id": "ginger_milk",
+		"ingredients": [
+			"ginger"
+		],
+		"name": "姜汁撞奶",
+		"season": "冬",
+		"solar_term": "立冬",
+		"steps": [
+			{
+				"needle_speed": 1.5,
+				"perfect_zone_size": 0.25,
+				"step_name": "榨姜汁",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "撞奶",
+				"time_limit": 4.0
+			}
+		],
+		"unlock_condition": "default"
+	},
+	{
+		"cooking_method": "蒸",
+		"effects": [
+			"滋阴补血",
+			"润燥止血",
+			"美容养颜"
+		],
+		"id": "ejiao_cake",
+		"ingredients": [
+			"ejiao",
+			"red_date",
+			"glutinous_rice"
+		],
+		"name": "阿胶糕",
+		"season": "冬",
+		"solar_term": "立冬",
+		"steps": [
+			{
+				"needle_speed": 2.2,
+				"perfect_zone_size": 0.18,
+				"step_name": "熄胶",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "蒸制",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "rating_20"
+	},
+	{
+		"cooking_method": "炖",
+		"effects": [
+			"温中散寒",
+			"健脾养胃",
+			"调理虚寒"
+		],
+		"id": "pepper_pig_stomach",
+		"ingredients": [
+			"pepper",
+			"pig_stomach"
+		],
+		"name": "胡椒猪肚汤",
+		"season": "冬",
+		"solar_term": "大雪",
+		"steps": [
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "洗猪肚",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "加胡椒",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.5,
+				"perfect_zone_size": 0.15,
+				"step_name": "慢炖",
+				"time_limit": 4.0
+			}
+		],
+		"unlock_condition": "rating_20"
+	},
+	{
+		"cooking_method": "蒸",
+		"effects": [
+			"健脾开胃",
+			"消食化积",
+			"理气化痰"
+		],
+		"id": "radish_cake",
+		"ingredients": [
+			"radish",
+			"rice"
+		],
+		"name": "萝卜糕",
+		"season": "冬",
+		"solar_term": "冬至",
+		"steps": [
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "磨浆",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "蒸糕",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "rating_20"
+	},
+	{
+		"cooking_method": "蒸",
+		"effects": [
+			"补益心脾",
+			"养血安神",
+			"补充能量"
+		],
+		"id": "longan_rice",
+		"ingredients": [
+			"longan",
+			"glutinous_rice",
+			"red_date"
+		],
+		"name": "桂圆糯米炊饭",
+		"season": "冬",
+		"solar_term": "小寒",
+		"steps": [
+			{
+				"needle_speed": 1.8,
+				"perfect_zone_size": 0.22,
+				"step_name": "拌料",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.2,
+				"perfect_zone_size": 0.18,
+				"step_name": "蒸饭",
+				"time_limit": 5.0
+			}
+		],
+		"unlock_condition": "rating_50"
+	},
+	{
+		"cooking_method": "焖",
+		"effects": [
+			"健脾养胃",
+			"补肾强筋",
+			"补血养颜"
+		],
+		"id": "chestnut_trotter",
+		"ingredients": [
+			"chestnut",
+			"pig_trotter"
+		],
+		"name": "板栗烧猪蹄",
+		"season": "冬",
+		"solar_term": "大寒",
+		"steps": [
+			{
+				"needle_speed": 2.2,
+				"perfect_zone_size": 0.18,
+				"step_name": "粶猪蹄",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.0,
+				"perfect_zone_size": 0.2,
+				"step_name": "加板栗",
+				"time_limit": 5.0
+			},
+			{
+				"needle_speed": 2.5,
+				"perfect_zone_size": 0.15,
+				"step_name": "焖煮",
+				"time_limit": 4.0
+			}
+		],
+		"unlock_condition": "rating_50"
+	}
+]

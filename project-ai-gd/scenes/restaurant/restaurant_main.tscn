@@ -1,0 +1,227 @@
+[gd_scene format=3 uid="uid://003oltknemtp"]
+
+[ext_resource type="Script" uid="uid://b0j64tyk41e2h" path="res://scripts/ui/restaurant_main.gd" id="1"]
+[ext_resource type="Script" uid="uid://cne8ajw41wgkw" path="res://scripts/ui/hud.gd" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/cooking/cooking_ui.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/dialog/chat_dialog.tscn" id="4"]
+
+[node name="RestaurantMain" type="Control" unique_id=1570116820]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="." unique_id=675564974]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.18, 0.15, 0.12, 1)
+
+[node name="HUD" type="PanelContainer" parent="." unique_id=1362617960]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 60.0
+grow_horizontal = 2
+script = ExtResource("2")
+
+[node name="HBox" type="HBoxContainer" parent="HUD" unique_id=1512900100]
+layout_mode = 2
+
+[node name="DayLabel" type="Label" parent="HUD/HBox" unique_id=1778178108]
+layout_mode = 2
+text = "日期:"
+
+[node name="DayValue" type="Label" parent="HUD/HBox" unique_id=770387660]
+unique_name_in_owner = true
+layout_mode = 2
+text = "第1天"
+
+[node name="Sep1" type="VSeparator" parent="HUD/HBox" unique_id=1761744874]
+layout_mode = 2
+
+[node name="RatingLabel" type="Label" parent="HUD/HBox" unique_id=471414121]
+layout_mode = 2
+text = "评价:"
+
+[node name="RatingValue" type="Label" parent="HUD/HBox" unique_id=1330749204]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0"
+
+[node name="Sep2" type="VSeparator" parent="HUD/HBox" unique_id=2027624621]
+layout_mode = 2
+
+[node name="GoldLabel" type="Label" parent="HUD/HBox" unique_id=738337689]
+layout_mode = 2
+text = "金币:"
+
+[node name="GoldValue" type="Label" parent="HUD/HBox" unique_id=1797532396]
+unique_name_in_owner = true
+layout_mode = 2
+text = "50"
+
+[node name="Sep3" type="VSeparator" parent="HUD/HBox" unique_id=517917793]
+layout_mode = 2
+
+[node name="RecommendLabel" type="Label" parent="HUD/HBox" unique_id=275058612]
+layout_mode = 2
+text = "今日推荐:"
+
+[node name="RecommendValue" type="Label" parent="HUD/HBox" unique_id=429961667]
+unique_name_in_owner = true
+layout_mode = 2
+text = "无"
+
+[node name="CustomerArea" type="Control" parent="." unique_id=429159765]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 70.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CustomerInfo" type="Label" parent="CustomerArea" unique_id=1997479]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -300.0
+offset_top = 50.0
+offset_right = 300.0
+offset_bottom = 100.0
+grow_horizontal = 2
+text = "等待客人…"
+horizontal_alignment = 1
+
+[node name="CustomerQueueContainer" type="HBoxContainer" parent="CustomerArea" unique_id=829707179]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -300.0
+offset_top = 120.0
+offset_right = 300.0
+offset_bottom = 280.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="BottomBar" type="HBoxContainer" parent="." unique_id=1516573214]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -70.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="BtnNextCustomer" type="Button" parent="BottomBar" unique_id=289268367]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(220, 50)
+layout_mode = 2
+text = "下一位客人"
+
+[node name="BtnEndDay" type="Button" parent="BottomBar" unique_id=1008840190]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(220, 50)
+layout_mode = 2
+text = "结束今天"
+
+[node name="Spacer" type="Control" parent="BottomBar" unique_id=174481400]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BtnShop" type="Button" parent="BottomBar" unique_id=375848673]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+text = "商店"
+
+[node name="BtnMenu" type="Button" parent="BottomBar" unique_id=1323234972]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+text = "菜单"
+
+[node name="BtnInventory" type="Button" parent="BottomBar" unique_id=1375674809]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+text = "仓库"
+
+[node name="DialogUI" type="Control" parent="." unique_id=1298651940]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ChatDialogInstance" parent="DialogUI" unique_id=1720042831 instance=ExtResource("4")]
+layout_mode = 1
+
+[node name="CookingUI" type="Control" parent="." unique_id=1574662519]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CookingInstance" parent="CookingUI" unique_id=1283224592 instance=ExtResource("3")]
+layout_mode = 1
+
+[node name="DaySummaryPanel" type="PanelContainer" parent="." unique_id=2112259769]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -120.0
+offset_right = 200.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="DaySummaryPanel" unique_id=265258607]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="DaySummaryPanel/VBox" unique_id=1093639461]
+layout_mode = 2
+text = "今日总结"
+horizontal_alignment = 1
+
+[node name="SummaryLabel" type="Label" parent="DaySummaryPanel/VBox" unique_id=2012322075]
+unique_name_in_owner = true
+layout_mode = 2
+text = "..."
+horizontal_alignment = 1
+
+[node name="BtnNextDay" type="Button" parent="DaySummaryPanel/VBox" unique_id=1457613439]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "进入下一天"

@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://pp3l831d8ips"]
+
+[ext_resource type="Script" uid="uid://b4bext3yxwsie" path="res://scripts/ui/main_menu.gd" id="1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_title"]
+font_size = 48
+
+[node name="MainMenu" type="Control" unique_id=2092468852]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="." unique_id=137105241]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15, 0.12, 0.1, 1)
+
+[node name="Title" type="Label" parent="." unique_id=1888448613]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_top = 100.0
+offset_right = 200.0
+offset_bottom = 160.0
+grow_horizontal = 2
+text = "药 膳 小 铺"
+label_settings = SubResource("LabelSettings_title")
+horizontal_alignment = 1
+
+[node name="VBox" type="VBoxContainer" parent="." unique_id=2068237695]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -60.0
+offset_right = 100.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BtnStart" type="Button" parent="VBox" unique_id=871366199]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 45)
+layout_mode = 2
+text = "新游戏"
+
+[node name="BtnContinue" type="Button" parent="VBox" unique_id=1587458743]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 45)
+layout_mode = 2
+text = "继续游戏"
+
+[node name="BtnQuit" type="Button" parent="VBox" unique_id=1885702595]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 45)
+layout_mode = 2
+text = "退出"

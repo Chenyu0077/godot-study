@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgoa3out77vg6"
-path="res://.godot/imported/微信图片_20260507211046.jpg-55e18bd29930138af10d50bde0169d9b.ctex"
+uid="uid://hga3f6n4ef4v"
+path="res://.godot/imported/main01.jpg-c24d14c162577c1a2aab3ed992367f18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/微信图片_20260507211046.jpg"
-dest_files=["res://.godot/imported/微信图片_20260507211046.jpg-55e18bd29930138af10d50bde0169d9b.ctex"]
+source_file="res://assets/images/main01.jpg"
+dest_files=["res://.godot/imported/main01.jpg-c24d14c162577c1a2aab3ed992367f18.ctex"]
 
 [params]
 

@@ -1,15 +1,10 @@
-你正在开发 Godot 4.6.2 项目《???》。请先阅读：
-1. README.md
-2. Docs/01_GAME_DESIGN_BRIEF.md
-3. Docs/02_SYSTEM_SPEC.md
-4. Data/*.json
-
 ## 一、项目主目录
 下面是项目的主要目录结构，不可直接删除和添加其主目录结构，只可添加删除和修改其下的子目录文件夹和文件
 项目目录规范
 
 res://
 <br>├── docs/          # 提示词文档
+<br>├── addons/        # 插件
 <br>├── assets/        # 资源
 <br>├────── audio/     # 音频 (.ogg, .wav)
 <br>├────── datas/     # 数据 (.json, .csv, .tres)

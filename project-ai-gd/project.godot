@@ -11,8 +11,24 @@ config_version=5
 [application]
 
 config/name="project-ai-gd"
+run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*res://scripts/managers/game_manager.gd"
+SaveManager="*res://scripts/managers/save_manager.gd"
+RecipeManager="*res://scripts/managers/recipe_manager.gd"
+
+[display]
+
+window/size/viewport_width=1280.0
+window/size/viewport_height=720.0
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_mcp/plugin.cfg")
 
 [physics]
 
