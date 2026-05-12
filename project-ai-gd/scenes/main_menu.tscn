@@ -1,9 +1,93 @@
 [gd_scene format=3 uid="uid://pp3l831d8ips"]
 
 [ext_resource type="Script" uid="uid://b4bext3yxwsie" path="res://scripts/ui/main_menu.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://canpm6vf4gvfw" path="res://assets/images/main/IMG_4170.png" id="2_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://cv8oghre0wr8a" path="res://assets/images/main/IMG_4167.png" id="3_wu84c"]
+[ext_resource type="FontFile" uid="uid://c55bou1sjgy5f" path="res://assets/fonts/中华薪火体.ttf" id="4_wu84c"]
+[ext_resource type="Script" uid="uid://dvma4nmaj02sp" path="res://scripts/ui/settings_overlay.gd" id="5_settings"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_title"]
-font_size = 48
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_menu_button"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_menu_button_hover"]
+bg_color = Color(0.952941, 0.827451, 0.513726, 0.18)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.968627, 0.886275, 0.662745, 0.9)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.2)
+shadow_size = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_settings_panel"]
+bg_color = Color(0.960784, 0.921569, 0.827451, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.690196, 0.54902, 0.364706, 1)
+corner_radius_top_left = 26
+corner_radius_top_right = 26
+corner_radius_bottom_right = 26
+corner_radius_bottom_left = 26
+shadow_color = Color(0, 0, 0, 0.18)
+shadow_size = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_settings_header"]
+bg_color = Color(0.529412, 0.490196, 0.372549, 1)
+corner_radius_top_left = 22
+corner_radius_top_right = 22
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_settings_close"]
+bg_color = Color(0.866667, 0.627451, 0.486275, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.827451, 0.235294, 0.223529, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_settings_blue"]
+bg_color = Color(0.266667, 0.560784, 0.733333, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.082353, 0.458824, 0.737255, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_settings_green"]
+bg_color = Color(0.494118, 0.635294, 0.411765, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.031373, 0.470588, 0.227451, 1)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_settings_red"]
+bg_color = Color(0.854902, 0.572549, 0.458824, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.827451, 0.235294, 0.223529, 1)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
 
 [node name="MainMenu" type="Control" unique_id=2092468852]
 layout_mode = 3
@@ -23,48 +107,414 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.15, 0.12, 0.1, 1)
 
-[node name="Title" type="Label" parent="." unique_id=1888448613]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -200.0
-offset_top = 100.0
-offset_right = 200.0
-offset_bottom = 160.0
-grow_horizontal = 2
-text = "药 膳 小 铺"
-label_settings = SubResource("LabelSettings_title")
-horizontal_alignment = 1
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1160267285]
+position = Vector2(639.99994, 360)
+scale = Vector2(0.46837345, 0.46837345)
+texture = ExtResource("2_bqqt6")
 
-[node name="VBox" type="VBoxContainer" parent="." unique_id=2068237695]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=140775199]
+layout_mode = 0
+offset_left = 353.0
+offset_top = 407.0
+offset_right = 553.0
+offset_bottom = 662.0
+theme_override_constants/separation = 70
+
+[node name="Control" type="Control" parent="VBoxContainer" unique_id=2105924599]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Control" unique_id=1585730587]
+layout_mode = 0
+offset_right = 1389.0
+offset_bottom = 433.0
+scale = Vector2(0.16328306, 0.16328306)
+texture = ExtResource("3_wu84c")
+
+[node name="Label" type="Label" parent="VBoxContainer/Control" unique_id=938486956]
+layout_mode = 0
+offset_left = 13.999996
+offset_top = 17.999998
+offset_right = 214.685
+offset_bottom = 62.0
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 28
+text = "新游戏"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnStart" type="Button" parent="VBoxContainer/Control" unique_id=871366199]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200.685, 45)
+layout_mode = 0
+offset_left = 19.0
+offset_top = 22.0
+offset_right = 219.685
+offset_bottom = 67.0
+scale = Vector2(0.93908685, 0.83859956)
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_menu_button")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_menu_button_hover")
+theme_override_styles/hover = SubResource("StyleBoxFlat_menu_button_hover")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_menu_button")
+theme_override_styles/focus = SubResource("StyleBoxFlat_menu_button_hover")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Control2" type="Control" parent="VBoxContainer" unique_id=470964048]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Control2" unique_id=799255292]
+layout_mode = 0
+offset_right = 1389.0
+offset_bottom = 433.0
+scale = Vector2(0.16328306, 0.16328306)
+texture = ExtResource("3_wu84c")
+
+[node name="Label2" type="Label" parent="VBoxContainer/Control2" unique_id=755361136]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 16.0
+offset_right = 213.685
+offset_bottom = 61.0
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 28
+text = "继续游戏"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnContinue" type="Button" parent="VBoxContainer/Control2" unique_id=1895641020]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200.685, 45)
+layout_mode = 0
+offset_left = 19.0
+offset_top = 22.0
+offset_right = 219.685
+offset_bottom = 67.0
+scale = Vector2(0.9391346, 0.83859956)
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_menu_button")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_menu_button_hover")
+theme_override_styles/hover = SubResource("StyleBoxFlat_menu_button_hover")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_menu_button")
+theme_override_styles/focus = SubResource("StyleBoxFlat_menu_button_hover")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Control3" type="Control" parent="VBoxContainer" unique_id=271843319]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Control3" unique_id=919288963]
+layout_mode = 0
+offset_right = 1389.0
+offset_bottom = 433.0
+scale = Vector2(0.16328306, 0.16328306)
+texture = ExtResource("3_wu84c")
+
+[node name="Label3" type="Label" parent="VBoxContainer/Control3" unique_id=1274128270]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 17.0
+offset_right = 212.685
+offset_bottom = 62.0
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 28
+text = "退出"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnQuit" type="Button" parent="VBoxContainer/Control3" unique_id=1830427628]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200.685, 45)
+layout_mode = 0
+offset_left = 19.0
+offset_top = 22.0
+offset_right = 219.685
+offset_bottom = 67.0
+scale = Vector2(0.9383377, 0.83859956)
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_menu_button")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_menu_button_hover")
+theme_override_styles/hover = SubResource("StyleBoxFlat_menu_button_hover")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_menu_button")
+theme_override_styles/focus = SubResource("StyleBoxFlat_menu_button_hover")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Control4" type="Control" parent="VBoxContainer" unique_id=823220382]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Control4" unique_id=613556905]
+layout_mode = 0
+offset_right = 1389.0
+offset_bottom = 433.0
+scale = Vector2(0.16328306, 0.16328306)
+texture = ExtResource("3_wu84c")
+
+[node name="Label4" type="Label" parent="VBoxContainer/Control4" unique_id=312452687]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 17.0
+offset_right = 212.685
+offset_bottom = 62.0
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 28
+text = "设置"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnSettings" type="Button" parent="VBoxContainer/Control4" unique_id=62249533]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200.685, 45)
+layout_mode = 0
+offset_left = 19.0
+offset_top = 22.0
+offset_right = 219.685
+offset_bottom = 67.0
+scale = Vector2(0.9383377, 0.83859956)
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_menu_button")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_menu_button_hover")
+theme_override_styles/hover = SubResource("StyleBoxFlat_menu_button_hover")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_menu_button")
+theme_override_styles/focus = SubResource("StyleBoxFlat_menu_button_hover")
+icon_alignment = 1
+expand_icon = true
+
+[node name="SettingsOverlay" type="Control" parent="." unique_id=1652387770]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("5_settings")
+
+[node name="Dim" type="ColorRect" parent="SettingsOverlay" unique_id=1846789974]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5)
+
+[node name="Panel" type="PanelContainer" parent="SettingsOverlay" unique_id=1819208909]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -100.0
-offset_top = -60.0
-offset_right = 100.0
-offset_bottom = 80.0
+offset_left = -446.0
+offset_top = -292.0
+offset_right = 446.0
+offset_bottom = 292.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_settings_panel")
 
-[node name="BtnStart" type="Button" parent="VBox" unique_id=871366199]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(200, 45)
+[node name="Bg" type="ColorRect" parent="SettingsOverlay/Panel" unique_id=932241249]
+custom_minimum_size = Vector2(892, 584)
 layout_mode = 2
-text = "新游戏"
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
 
-[node name="BtnContinue" type="Button" parent="VBox" unique_id=1587458743]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(200, 45)
+[node name="Frame" type="PanelContainer" parent="SettingsOverlay/Panel" unique_id=1502859863]
 layout_mode = 2
-text = "继续游戏"
 
-[node name="BtnQuit" type="Button" parent="VBox" unique_id=1885702595]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(200, 45)
+[node name="Margin" type="MarginContainer" parent="SettingsOverlay/Panel/Frame" unique_id=2013216946]
 layout_mode = 2
-text = "退出"
+theme_override_constants/margin_left = 36
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_right = 36
+theme_override_constants/margin_bottom = 28
+
+[node name="SettingsRoot" type="VBoxContainer" parent="SettingsOverlay/Panel/Frame/Margin" unique_id=564608800]
+layout_mode = 2
+theme_override_constants/separation = 26
+
+[node name="Header" type="PanelContainer" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot" unique_id=959036582]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_settings_header")
+
+[node name="HeaderBg" type="ColorRect" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Header" unique_id=1684149966]
+layout_mode = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Title" type="Label" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Header" unique_id=1125269742]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 34
+text = "设置"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnCloseSettings" type="Button" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Header" unique_id=1628062572]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_settings_close")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_settings_close")
+theme_override_styles/hover = SubResource("StyleBoxFlat_menu_button_hover")
+text = "X"
+
+[node name="Body" type="VBoxContainer" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot" unique_id=1392657442]
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="WindowRow" type="HBoxContainer" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body" unique_id=1634324313]
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="WindowLabel" type="Label" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body/WindowRow" unique_id=769672804]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.568627, 0.364706, 0.176471, 1)
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 28
+text = "窗口化："
+vertical_alignment = 1
+
+[node name="WindowedCheck" type="CheckBox" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body/WindowRow" unique_id=511057454]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_default_cursor_shape = 2
+button_pressed = true
+
+[node name="ResolutionRow" type="HBoxContainer" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body" unique_id=35427889]
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="ResolutionLabel" type="Label" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body/ResolutionRow" unique_id=1280282867]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.568627, 0.364706, 0.176471, 1)
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 28
+text = "分辨率："
+vertical_alignment = 1
+
+[node name="ResolutionSelect" type="OptionButton" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body/ResolutionRow" unique_id=1205002437]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 54)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_settings_blue")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_settings_blue")
+theme_override_styles/hover = SubResource("StyleBoxFlat_settings_blue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_settings_blue")
+selected = 0
+item_count = 3
+popup/item_0/text = "1920x1080"
+popup/item_0/id = 0
+popup/item_1/text = "1600x900"
+popup/item_1/id = 1
+popup/item_2/text = "1280x720"
+popup/item_2/id = 2
+
+[node name="SfxRow" type="HBoxContainer" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body" unique_id=1127448453]
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="SfxLabel" type="Label" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body/SfxRow" unique_id=1747842913]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.568627, 0.364706, 0.176471, 1)
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 28
+text = "音效："
+vertical_alignment = 1
+
+[node name="SfxSlider" type="HSlider" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body/SfxRow" unique_id=221487323]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+size_flags_horizontal = 3
+value = 70.0
+
+[node name="BtnMuteSfx" type="Button" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body/SfxRow" unique_id=942086586]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(140, 54)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_settings_blue")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_settings_blue")
+theme_override_styles/hover = SubResource("StyleBoxFlat_menu_button_hover")
+text = "静音"
+
+[node name="MusicRow" type="HBoxContainer" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body" unique_id=2087129367]
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="MusicLabel" type="Label" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body/MusicRow" unique_id=1297681586]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.568627, 0.364706, 0.176471, 1)
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 28
+text = "音乐："
+vertical_alignment = 1
+
+[node name="MusicSlider" type="HSlider" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body/MusicRow" unique_id=1829492266]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+size_flags_horizontal = 3
+value = 35.0
+
+[node name="BtnMuteMusic" type="Button" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Body/MusicRow" unique_id=1152441018]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(140, 54)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_settings_blue")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_settings_blue")
+theme_override_styles/hover = SubResource("StyleBoxFlat_menu_button_hover")
+text = "静音"
+
+[node name="Footer" type="HBoxContainer" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot" unique_id=644104495]
+custom_minimum_size = Vector2(0, 76)
+layout_mode = 2
+theme_override_constants/separation = 80
+alignment = 1
+
+[node name="BtnSaveSettings" type="Button" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Footer" unique_id=311294951]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(240, 62)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_settings_green")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_settings_green")
+theme_override_styles/hover = SubResource("StyleBoxFlat_menu_button_hover")
+text = "保存设置"
+
+[node name="BtnBackFromSettings" type="Button" parent="SettingsOverlay/Panel/Frame/Margin/SettingsRoot/Footer" unique_id=1509956368]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(240, 62)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_settings_red")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_settings_red")
+theme_override_styles/hover = SubResource("StyleBoxFlat_menu_button_hover")
+text = "返回游戏"

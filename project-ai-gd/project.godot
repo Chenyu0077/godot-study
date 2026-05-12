@@ -30,6 +30,10 @@ window/size/viewport_height=720.0
 
 enabled=PackedStringArray("res://addons/godot_mcp/plugin.cfg")
 
+[gui]
+
+theme/custom_font="uid://c55bou1sjgy5f"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

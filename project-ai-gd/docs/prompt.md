@@ -65,7 +65,7 @@
 ```
 选择食材（静态选择）
   → 进入力度条小游戏（2~3 轮，对应不同烹饪步骤）
-    → 每轮点击判定得分
+	→ 每轮点击判定得分
   → 汇总所有轮次得分 → 出锅评级
 ```
 
@@ -197,18 +197,18 @@ Customer {
   "effects": ["补肝肾", "明目"],
   "unlock_condition": "default",
   "steps": [
-    {
-      "step_name": "下锅",
-      "needle_speed": 1.5,
-      "perfect_zone_size": 0.25,
-      "time_limit": 5.0
-    },
-    {
-      "step_name": "出锅",
-      "needle_speed": 1.8,
-      "perfect_zone_size": 0.20,
-      "time_limit": 5.0
-    }
+	{
+	  "step_name": "下锅",
+	  "needle_speed": 1.5,
+	  "perfect_zone_size": 0.25,
+	  "time_limit": 5.0
+	},
+	{
+	  "step_name": "出锅",
+	  "needle_speed": 1.8,
+	  "perfect_zone_size": 0.20,
+	  "time_limit": 5.0
+	}
   ]
 }
 ```
@@ -268,9 +268,9 @@ res://
 │   ├── ingredients.json
 │   └── symptoms.json
 └── assets/
-    ├── images/
-    ├── audio/
-    └── fonts/
+	├── images/
+	├── audio/
+	└── fonts/
 ```
 
 ---
